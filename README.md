@@ -44,15 +44,15 @@ cc lex.yy.c y.tab.c -lfl
 ```
 ### **9️⃣ Parser for “FOR” Loop Statements**
 ```bash
-bison -d CC_Lab9.y
+yacc -d CC_Lab9.y
 flex CC_Lab9.l
-gcc lex.yy.c CC_Lab9.tab.c -lfl
+cc lex.yy.c y.tab.c -lfl
 ./a.out
 ```
 ### **🔟 Intermediate Code (IC) Generator for Arithmetic Expression**
 ```bash
-bison -d CC_Lab10.y
+yacc -d CC_Lab10.y
 flex CC_Lab10.l
-gcc CC_Lab10.tab.c lex.yy.c
+cc lex.yy.c y.tab.c -lfl
 ./a.out
 ```
